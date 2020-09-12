@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>John Katona</title>
+        <link href="assets/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900|Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+        <script>
+            window.addEventListener('load', function () {
+                var videos = [
+                    "assets/1.mp4",
+                    "assets/2.mp4",
+                    "assets/3.mp4",
+                    "assets/4.mp4",
+                    "assets/5.mp4",
+                    "assets/6.mp4",
+                    // "assets/7.mp4"
+                ];
+
+                var src = document.createElement("source")
+                src.setAttribute("src", videos[Math.floor(Math.random() * videos.length)]);
+                src.setAttribute("type", "video/mp4");
+
+                var video = document.getElementsByTagName("video")[0];
+                video.appendChild(src);
+                video.load();
+            });
+        </script>
+    </head>
+    <body>
+        <video autoplay muted loop id="bg"></video>
+
+        <div class="welcome">
+            <a class="col" href="#">
+                <span>Songwriter</span>
+            </a>
+            <a class="col" href="#">
+                <span>Producer</span>
+            </a>
+            <a class="col" href="media.html">
+                <span>Media</span>
+            </a>
+            <a class="col" href="#">
+                <span>Contact</span>
+            </a>
+        </div>
+    </body>
+</html>
