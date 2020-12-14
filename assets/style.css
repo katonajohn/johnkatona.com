@@ -27,6 +27,19 @@ h1 {
     font-family: 'Work Sans', sans-serif;
 }
 
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 38pt;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+}
+
+
 .welcome {
     position: absolute;
     width: 100%;
@@ -55,6 +68,10 @@ h1 {
     opacity: 1;
 }
 
+.col span {
+    font-family: 'Work Sans', sans-serif;
+}
+
 .col span, h1 span {
     background: white;
     font-size: 4em;
@@ -78,7 +95,7 @@ h1 {
 .container .block {
     float: left;
     width: 50%;
-    padding:20px;
+    padding: 20px;
 }
 
 .video-container {
@@ -96,6 +113,9 @@ h1 {
     height: 100%;
 }
 
+.image-container img {
+    max-width: 100%;
+}
 
 @media screen and (max-width: 1500px) {
     .col span {
@@ -107,7 +127,6 @@ h1 {
     .col span {
         font-size: 4em;
     }
-
     .container .block {
         display: block;
         float: none;
@@ -120,7 +139,6 @@ h1 {
         float: left;
         width: 100%;
     }
-
     video {
         position: fixed;
         margin: auto;
@@ -130,7 +148,6 @@ h1 {
         right: 0;
         min-width: 1024px;
     }
-
     h1 span {
         font-size: 3em;
     }
