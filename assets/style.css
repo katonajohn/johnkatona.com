@@ -105,7 +105,7 @@ h2 {
     height: 0;
 }
 
-.video-container embed {
+.video-container embed, .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
